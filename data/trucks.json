@@ -1,0 +1,152 @@
+[
+  {
+    "Photo": "6",
+    "Truck year": "2019",
+    "Model": "VOLVO",
+    "Condition": "Good",
+    "Pay": "30%",
+    "Location": "KS",
+    "Status": "Available",
+    "Additional Info": "Fridge, Microwave, New Mattres, Ryder & Pet policy, Transportation is covered"
+  },
+  {
+    "Photo": "7",
+    "Truck year": "2020",
+    "Model": "Peterbilt",
+    "Condition": "Good",
+    "Pay": "30%",
+    "Location": "TX",
+    "Status": "Available",
+    "Additional Info": "Fridge, Microwave, New Mattres, Ryder & Pet policy, Transportation is covered"
+  },
+  {
+    "Photo": "8",
+    "Truck year": "2017",
+    "Model": "interntational",
+    "Condition": "Good",
+    "Pay": "30%",
+    "Location": "TX",
+    "Status": "Available",
+    "Additional Info": "Fridge, Microwave, New Mattres, Ryder & Pet policy, Transportation is covered"
+  },
+  {
+    "Photo": "9",
+    "Truck year": "2018",
+    "Model": "FRTH",
+    "Condition": "Good",
+    "Pay": "30% 70cpm",
+    "Location": "FL",
+    "Status": "Available",
+    "Additional Info": "Fridge, Microwave, New Mattres, Ryder & Pet policy, Transportation is covered"
+  },
+  {
+    "Photo": "10",
+    "Truck year": "2018",
+    "Model": "interntational",
+    "Condition": "Good",
+    "Pay": "30% 70cpm",
+    "Location": "AZ",
+    "Status": "Available",
+    "Additional Info": "Fridge, Microwave, New Mattres, Ryder & Pet policy, Transportation is covered"
+  },
+  {
+    "Photo": "11",
+    "Truck year": "2020",
+    "Model": "VOLVO",
+    "Condition": "Good",
+    "Pay": "30% 70cpm",
+    "Location": "AZ",
+    "Status": "Available",
+    "Additional Info": "Fridge, Microwave, New Mattres, Ryder & Pet policy, Transportation is covered"
+  },
+  {
+    "Photo": "12",
+    "Truck year": "2018",
+    "Model": "Peterbilt",
+    "Condition": "Good",
+    "Pay": "30%",
+    "Location": "MD",
+    "Status": "Available",
+    "Additional Info": "Fridge, Microwave, New Mattres, Ryder & Pet policy, Transportation is covered"
+  },
+  {
+    "Photo": "13",
+    "Truck year": "2021",
+    "Model": "Peterbilt",
+    "Condition": "Good",
+    "Pay": "30%",
+    "Location": "MD",
+    "Status": "Available",
+    "Additional Info": "Fridge, Microwave, New Mattres, Ryder & Pet policy, Transportation is covered"
+  },
+  {
+    "Photo": "14",
+    "Truck year": "2017",
+    "Model": "FRTH",
+    "Condition": "Good",
+    "Pay": "30% 70cpm",
+    "Location": "GA",
+    "Status": "Available",
+    "Additional Info": "TV, Fridge, Microwave, New Mattres, Ryder & Pet policy, Transportation is covered"
+  },
+  {
+    "Photo": "15",
+    "Truck year": "2020",
+    "Model": "interntational",
+    "Condition": "Good",
+    "Pay": "30% 70cpm",
+    "Location": "GA",
+    "Status": "Available",
+    "Additional Info": "Fridge, Microwave, New Mattres, Ryder & Pet policy, Transportation is covered"
+  },
+  {
+    "Photo": "16",
+    "Truck year": "2016",
+    "Model": "FRTH",
+    "Condition": "Good",
+    "Pay": "30% 70cpm",
+    "Location": "VA",
+    "Status": "Available",
+    "Additional Info": "Fridge, Microwave, New Mattres, Ryder & Pet policy, Transportation is covered"
+  },
+  {
+    "Photo": "17",
+    "Truck year": "2020",
+    "Model": "interntational",
+    "Condition": "Good",
+    "Pay": "30%",
+    "Location": "GA",
+    "Status": "Available",
+    "Additional Info": "Fridge, Microwave, New Mattres, Ryder & Pet policy, Transportation is covered"
+  },
+  {
+    "Photo": "18",
+    "Truck year": "2023",
+    "Model": "FRTH",
+    "Condition": "Good",
+    "Pay": "30% 70cpm",
+    "Location": "TX",
+    "Status": "Available",
+    "Additional Info": "Fridge, Microwave, New Mattres, Ryder & Pet policy, Transportation is covered"
+  },
+  {
+    "Photo": "19",
+    "Truck year": "2019",
+    "Model": "interntational",
+    "Condition": "Good",
+    "Pay": "30% 70cpm",
+    "Location": "TX",
+    "Status": "Available",
+    "Additional Info": "Fridge, Microwave, New Mattres, Ryder & Pet policy, Transportation is covered"
+  },
+  {
+    "Photo": "20",
+    "Truck year": "2020",
+    "Model": "FRTH",
+    "Condition": "Good",
+    "Pay": "70cpm",
+    "Location": "TX",
+    "Status": "Available",
+    "Additional Info": "Fridge, Microwave, New Mattres, Ryder & Pet policy, Transportation is covered"
+  }
+]

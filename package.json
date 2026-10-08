@@ -1,0 +1,24 @@
+{
+  "name": "jm-landing",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "predev": "node scripts/copy-maplibre.mjs",
+    "dev": "next dev -p 3030",
+    "prebuild": "node scripts/copy-maplibre.mjs",
+    "build": "next build",
+    "start": "next start -p 3030",
+    "optimize:truck": "gltf-transform optimize assets-src/cascadia.original.glb public/assets/cascadia.glb --compress meshopt --texture-compress webp --join false --flatten false --palette false --instance false --texture-size 1024 --simplify false && gltf-transform optimize assets-src/cascadia.original.glb public/assets/cascadia-mobile.glb --compress meshopt --texture-compress webp --join false --flatten false --palette false --instance false --texture-size 512 --simplify true --simplify-ratio 0.6 --simplify-error 0.0001 --simplify-lock-border true"
+  },
+  "dependencies": {
+    "maplibre-gl": "^6.13.0",
+    "next": "^16.4.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "three": "^0.184.0"
+  },
+  "devDependencies": {
+    "@gltf-transform/cli": "^4.5.1",
+    "sharp": "^0.35.5"
+  }
+}
