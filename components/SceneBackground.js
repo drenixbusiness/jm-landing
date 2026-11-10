@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { SCENE_ROUTES } from '@/lib/site';
+import { isChristmas } from '@/christmas/config';
 
 // One persistent WebGL canvas for the whole site. It is created on the first 3D page,
 // paused (and hidden) on solid pages like the truck catalog, and re-targeted to the
@@ -37,7 +38,8 @@ export default function SceneBackground({ glbUrl, signFont }) {
       import('@/lib/scene')
         .then(({ initScene }) => {
           const c = cfgRef.current || cfg;
-          return initScene(canvasRef.current, { ids: c.ids, keys: c.keys, timeOfDay: tod, glbUrl, fontFamily: signFont });
+          const theme = isChristmas() ? 'christmas' : 'default';
+          return initScene(canvasRef.current, { ids: c.ids, keys: c.keys, timeOfDay: tod, glbUrl, fontFamily: signFont, theme });
         })
         .then((teardown) => {
           if (unmounted.current) return teardown();

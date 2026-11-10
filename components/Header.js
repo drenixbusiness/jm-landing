@@ -4,11 +4,14 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
 import { NAV, PHONE_MAIN } from '@/lib/site';
+import useChristmas from '@/christmas/useChristmas';
+import LogoDecor from '@/christmas/LogoDecor';
 
 export default function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const ref = useRef(null);
+  const christmas = useChristmas();
 
   // Expose the header height to CSS (hero min-height, sticky HUD).
   useEffect(() => {
@@ -35,6 +38,7 @@ export default function Header() {
         <Link href="/" className="site-header__logo" aria-label="Joshua Meuzelaar LLC — Home">
           <img className="logo-full" src="/assets/jm-lockup-white.png" alt="Joshua Meuzelaar Express Trucking" width="1629" height="312" />
           <img className="logo-mark" src="/assets/jm-mark-white.png" alt="Joshua Meuzelaar" width="896" height="451" />
+          {christmas && <LogoDecor />}
         </Link>
         <nav className="site-nav" aria-label="Main">
           {NAV.map((n) => (

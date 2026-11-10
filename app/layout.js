@@ -5,7 +5,9 @@ import Footer from '@/components/Footer';
 import SceneBackground from '@/components/SceneBackground';
 import RevealObserver from '@/components/RevealObserver';
 import HighwayScrollbar from '@/components/HighwayScrollbar';
+import ChristmasTheme from '@/christmas/ChristmasTheme';
 import './globals.css';
+import '@/christmas/christmas.css';
 
 const FONTS =
   'https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@700;800&family=JetBrains+Mono:wght@500;700&family=Overpass:wght@700;800&display=swap';
@@ -43,6 +45,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <a className="skip-link" href="#main">Skip to content</a>
+        <ChristmasTheme />
         <SceneBackground glbUrl={GLB_URL} signFont="Overpass" />
         <Header />
         <main id="main" className="page">{children}</main>

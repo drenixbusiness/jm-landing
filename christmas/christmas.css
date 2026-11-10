@@ -1,0 +1,44 @@
+/* Christmas / New Year dressing. Every rule is scoped to html[data-theme='christmas'],
+   so this file is inert on the regular site. */
+
+/* ---------- Header logo: string lights + Santa hat ---------- */
+.xmas-logo { display: none; }
+html[data-theme='christmas'] .site-header__logo { position: relative; }
+html[data-theme='christmas'] .xmas-logo { display: block; position: absolute; inset: 0; pointer-events: none; }
+/* max-width: none — the global `svg { max-width: 100% }` would squeeze the garland to the logo width. */
+.xmas-garland { position: absolute; overflow: visible; max-width: none; max-height: none; }
+.xmas-hat { max-width: none; }
+.xmas-bulb { filter: drop-shadow(0 0 2.5px var(--c)); animation: xmasTwinkle 1.6s ease-in-out infinite alternate; }
+@keyframes xmasTwinkle {
+  0% { opacity: 0.45; filter: drop-shadow(0 0 0 var(--c)); }
+  100% { opacity: 1; filter: drop-shadow(0 0 4px var(--c)); }
+}
+.xmas-hat {
+  position: absolute;
+  width: clamp(28px, 2.6vw, 34px);
+  left: -13px;
+  top: -13px;
+  transform: rotate(-22deg);
+  transform-origin: 30% 80%;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.35));
+}
+
+/* ---------- Header: a snow lip along the bottom edge ---------- */
+html[data-theme='christmas'] .site-header::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 8px;
+  pointer-events: none;
+  background:
+    linear-gradient(#fff, #fff) 0 0 / 100% 2px no-repeat,
+    radial-gradient(ellipse 9px 6px at 9px 0, #fff 98%, transparent) 0 0 / 17px 8px repeat-x,
+    radial-gradient(ellipse 6px 4px at 6px 0, #eef4f8 98%, transparent) 7px 0 / 29px 8px repeat-x;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.25));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .xmas-bulb { animation: none; }
+}
